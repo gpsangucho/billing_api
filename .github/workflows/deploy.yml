@@ -42,7 +42,7 @@ jobs:
         DATABASE_URL: postgres://postgres:postgres@localhost:5432/postgres
         SECRET_KEY: test-secret-key
       run: |
-        python manage.py test
+        python billing_api/manage.py test
 
   deploy:
     needs: test
